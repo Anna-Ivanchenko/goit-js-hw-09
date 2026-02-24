@@ -34,7 +34,7 @@ form.addEventListener('input', event => {
   const { name, value } = event.target;
 
   if (name === 'email' || name === 'message') {
-    formData[name] = value.trim();
+    formData[name] = value;
     localStorage.setItem(localStorageKey, JSON.stringify(formData));
   }
 });
